@@ -1,13 +1,13 @@
 import React from 'react';
-import './App.css';
-import './PopUp.jsx';
+import Modal from 'react-modal';
+import './idle-miner.css';
 
 
 function App() {
   return (
-    <main>
+    <div class="main">
       idle miner - the idle game
-    </main>
+    </div>
   );
 }
 
