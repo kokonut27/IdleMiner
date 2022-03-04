@@ -1,11 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-import App from './idle-miner'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './idle-miner';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   document.getElementById('idle-miner')
-)
+);
