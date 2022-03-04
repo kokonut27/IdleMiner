@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
 import ModalButton from './modal-button';
-import 'App.css';
+import './App.css';
 
 class PopUp extends React.Component {
   constructor() {
