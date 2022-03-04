@@ -5,9 +5,7 @@ import './idle-miner.css';
 
 function App() {
   return (
-    <div class="main">
-      idle miner - the idle game
-    </div>
+    <div>hi</div>
   );
 }
 
