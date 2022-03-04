@@ -27,13 +27,8 @@ class PopUp extends React.Component {
           overlayClassName={{ base: [style.overlayBase] }}
           isOpen={this.state.modalOpened}
           onRequestClose={this.toggleModal}
-          contentLabel="Modal with image"
+          contentLabel="Modal"
         >
-          <img
-            onClick={this.toggleModal}
-            src={data.src}
-            alt='image displayed in modal'
-          />
           <span className={style.text}>{data.description}</span>
         </Modal>
       </div>
