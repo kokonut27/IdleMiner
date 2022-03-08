@@ -1,11 +1,8 @@
-import React from 'react';
-import Modal from 'react-modal';
-
 class ExampleApp extends React.Component {
   constructor () {
     super();
     this.state = {
-      showModal: false
+      showModal: true
     };
     
     this.handleOpenModal = this.handleOpenModal.bind(this);
@@ -23,14 +20,15 @@ class ExampleApp extends React.Component {
   render () {
     return (
       <div>
-        <button onClick={this.handleOpenModal}>Trigger Modal</button>
         <ReactModal 
            isOpen={this.state.showModal}
-           contentLabel="onRequestClose Example"
+           contentLabel="Popup message"
            onRequestClose={this.handleCloseModal}
-           shouldCloseOnOverlayClick={false}
         >
-          <p>Modal text!</p>
+          <h1>Welcome to Idle Miner!</h1>
+          <p>Please note that this game was only recreated for educational purposes, and that I am in no way connected to Kolibri Games.</p>
+          <br></br>
+          <p>If you would like this website to be taken down, please email me <a href="mailto:beol0127@gmail.com">here.</a> Other than that, have fun playing the game!</p>
           <button onClick={this.handleCloseModal}>Close Modal</button>
         </ReactModal>
       </div>
@@ -40,4 +38,4 @@ class ExampleApp extends React.Component {
 
 const props = {};
 
-ReactDOM.render(<ExampleApp {...props} />, document.getElementById('main'))
+ReactDOM.render(<ExampleApp {...props} />, document.getElementById('idle-miner'))

@@ -3,10 +3,10 @@ import Modal from 'react-modal';
 import './idle-miner.css';
 
 
-function App() {
+function idleMiner() {
   return (
-    <div>hi</div>
+    <div className="main">hi</div>
   );
 }
 
-export default App;
+export default idleMiner;
